@@ -1,0 +1,82 @@
+@charset "utf-8";
+body{
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	font-family: "黑体";
+	font-size: 14px;
+}
+a{
+	color: #000;
+	text-decoration: none;
+	}
+a:hover{
+	text-decoration: underline;
+}
+
+.kongheng {
+	height: 30px;
+}
+.dakaungjuzhong {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.xwdabiaoti1 {
+	width: 100%;
+	font-family: "微软雅黑";
+	font-size: 18px;
+	font-weight: bold;
+	color: #000;
+	text-decoration: none;
+	line-height: 18px;
+	text-align: center;
+	margin-left: -10px;
+}
+.xwxiaobiaoti1{
+	font-size: 16px;
+	font-weight: bold;
+	}
+.ywxwshijian {
+	font-weight: bold;
+	float: right;
+	font-size: 14px;
+	color: #000;
+}
+
+
+.ywxwgonggao{
+	width:80%;
+	margin-left:auto;
+	margin-right:auto;}
+	
+.ywloginboy .ywxwgonggao #TabbedPanels1 .TabbedPanelsContentGroup .TabbedPanelsContent.TabbedPanelsContentVisible .nei .ulxw{
+	width:100%;
+	}
+
+.ywloginboy .ywxwgonggao #TabbedPanels1 .TabbedPanelsContentGroup .TabbedPanelsContent.TabbedPanelsContentVisible .nei .ulxw li {
+	width:100%;
+	margin-left:-3%;
+	overflow: hidden;
+	border-bottom: 1px dashed #dedede;
+	padding-left: 70px;
+	margin-top: 20px;
+	color: #000;
+	background-image: url(../images/ywxwli.png);
+	background-repeat: no-repeat;
+	background-position: 47px center;
+	list-style-image: none;
+	list-style-type: none;
+}
+.ywloginboy .ywxwgonggao #TabbedPanels1 .TabbedPanelsContentGroup .TabbedPanelsContent.TabbedPanelsContentVisible .nei .ulxw li a{
+	color: #333333;
+font-size: 14px;
+}
+.ywxwsj{
+	width: 230px;
+color: #333333;
+font-size: 14px;
+text-align: center;
+
+float: right;
+	}

@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="zh-CN">
+<meta name="Keywords" content="SuperSlide,SuperSlide组合应用基础示例">
+<meta name="Description" content="合创造更多效果">
+<title>SuperSlide - SuperSlide组合应用基础示例</title>
+<script type="text/javascript" src="../jquery1.42.min.js"></script><script type="text/javascript" src="../jquery.SuperSlide.2.1.1.js"></script>
+</head>
+
+<body>
+
+
+
+		<style type="text/css">
+		/* css 重置 */
+		*{margin:0; padding:0; list-style:none; }
+		body{ background:#fff; font:normal 12px/22px 宋体;  }
+		img{ border:0;  }
+		a{ text-decoration:none; color:#333;  }
+		a:hover{ color:#1974A1;  }
+		.js{width:90%; margin:10px auto 0 auto; }
+		.js p{ padding:5px 0; font-weight:bold; overflow:hidden;  }
+		.js p span{ float:right; }
+		.js p span a{ color:#f00; text-decoration:underline;   }
+		.js textarea{ height:100px;  width:98%; padding:5px; border:1px solid #ccc; border-top:2px solid #aaa;  border-left:2px solid #aaa;  }
+
+		/* 本例子css */
+		/*只有IE11识别*/
+		@media screen and(-ms-high-contrast:active),(-ms-high-contrast:none) {
+		.slideGroup{ width:1069px; border:5px solid #5da0e1; text-align:left; margin-left:auto; margin-right: }
+		.slideGroup .parBd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center; margin-left:60px; }
+		}
+		/*只有谷歌识别*/
+		@media screen and (-webkit-min-device-pixel-ratio:0) {
+		.slideGroup{ width:1069px; border:5px solid #5da0e1; text-align:left; margin-left:auto; margin-right: }
+		.slideGroup .parBd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center; margin-left:60px; }
+		}
+		/*只有火狐识别*/
+		@-moz-document url-prefix() {
+		.slideGroup{ width:1069px; border:5px solid #5da0e1; text-align:left; margin-left:auto; margin-right: }
+		.slideGroup .parBd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center; margin-left:60px; }
+		}
+		.slideGroup{ width:99%; border:5px solid #5da0e1; text-align:left; margin-left:auto; margin-right: }
+		.slideGroup .parHd{ height:30px; line-height:30px; background:#f4f4f4; padding:0 20px; border-bottom:1px solid #ddd;  position:relative;  }
+		.slideGroup .parHd ul{ float:left; position:absolute; left:20px; top:-1px; height:32px;   }
+		.slideGroup .parHd ul li{ float:left; padding:0 15px; cursor:pointer;   }
+		.slideGroup .parHd ul li.on{ height:30px;  background:#fff; border:1px solid #ddd; border-bottom:2px solid #fff; }
+		.slideGroup .slideBox{ overflow:hidden; zoom:1; padding:10px 0 10px 42px; position:relative;   }
+
+		.slideGroup .sPrev,.slideGroup .sNext{ position:absolute; left:5px; top:80px; display:block; width:30px; height:94px; border:1px solid #ddd; background:url(images/icoLeft.gif) center center no-repeat #f4f4f4; }
+		.slideGroup .sNext{ left:auto; right:5px; background:url(images/icoRight.gif) center center no-repeat #f4f4f4;  }
+		.slideGroup .sPrev:hover,.slideGroup .sNext:hover{ border-color:#f60;  }
+
+		.slideGroup .parBd ul{ overflow:hidden; zoom:1; }
+		.slideGroup .parBd ul li{ margin:0 8px; float:left; _display:inline; overflow:hidden; text-align:center; margin-left:60px; }
+		.slideGroup .parBd ul li .pic{ text-align:center; width:440px; margin-left:20px; }
+		.slideGroup .parBd ul li .pic img{ width:240px; height:90px; display:block;  padding:2px; border:1px solid #ccc;}
+		.slideGroup .parBd ul li .pic a:hover img{ border-color:#999;  }
+		.slideGroup .parBd ul li .title{ line-height:24px;   }
+				
+		/* 余额卡 */
+		/* 市民卡 */
+		.shimin_kayue_01{background-image: url(../../images/shiminka_1.jpg);background-repeat: no-repeat;background-size: 100%100%;
+			  height: 230px;width: 410px;}
+		.kahao_fwkahao{padding-top: 25px;margin-right:35px;font-size: 15px;font-weight: bold;color: #666;text-decoration: none;text-align: right;}	  
+		/* 市民卡 */  
+		
+		/* 通用市民卡 */  
+		.shimin_kayue_02{background-image: url(../../images/shiminka_2.jpg);background-repeat: no-repeat;background-size: 100%100%;
+			  height: 230px;width: 410px;}
+		.yve_box{ width:100%; border: 5px solid #5da0e1;height: 280px;width: auto;margin-left: auto;margin-right: auto;
+					 padding:10px;}
+		.yve_tybox{padding-top: 25px;}
+		.yve_tybiaoti{margin-left:30px; float:left; width:170px; font-size:18px;font-weight: bold;}
+		.kahao_tyfwkahao{ margin-right:35px; float: right;width:170px;text-align: right; font-size:15px;font-weight: bold;}
+		.yve_dabox{ margin-top:70px;}
+		.big_yve{ margin-left:6%; float:left; width:180px; font-size:16px;font-weight: bold;}
+		.small_yve{ margin-right:5%; float: right;width:180px;text-align: right; font-size:16px;font-weight: bold;}
+		.kayve_foot{margin-top:70px; float:left;}
+		.yve_state{margin-left:30px; float:left; width:170px; font-size:16px;font-weight: bold;}
+		.yve_loss{ margin-right:30px; float: right;width:170px;text-align: right; font-size:16px;font-weight: bold;}
+		.yve_text_red{color: #F00;}
+		.yve_loss a{color: #000;text-decoration: underline;}
+		/* 通用市民卡 */  
+		/* 余额卡 */
+
+		</style>
+
+
+		<div class="slideGroup" style="margin:0 auto">
+			
+			<div class="parBd">
+
+					<div class="slideBox">
+						<a class="sPrev" href="javascript:void(0)"></a>
+						<ul>
+							<li>
+								 <div class="shimin_kayue_01">
+                                      <div class="yve_tybox">
+                                          <div class="yve_tybiaoti"></div>
+                                          <div class="kahao_tyfwkahao">卡号：3312345*****</div>
+                                      </div>
+                                      <div class="yve_dabox">
+                                          <div class="big_yve"> 大钱包余额：<span class="yve_text_red">999999￥</span> </div>
+                                          <div class="small_yve">小钱包余额：<span class="yve_text_red">799997￥</span></div>
+                                      </div>
+                                      <div class="kayve_foot">
+                                          <div class="yve_state">卡状态：<span class="yve_text_red">正常</span></div>
+                                          <div class="yve_loss"><a>挂失</a></div>
+                                      </div>
+                                  </div>
+							</li>
+							<li>
+								 <div class="shimin_kayue_01">
+                                      <div class="yve_tybox">
+                                          <div class="yve_tybiaoti"></div>
+                                          <div class="kahao_tyfwkahao">卡号：3312345*****</div>
+                                      </div>
+                                      <div class="yve_dabox">
+                                          <div class="big_yve"> 大钱包余额：<span class="yve_text_red">999999￥</span> </div>
+                                          <div class="small_yve">小钱包余额：<span class="yve_text_red">799997￥</span></div>
+                                      </div>
+                                      <div class="kayve_foot">
+                                          <div class="yve_state">卡状态：<span class="yve_text_red">正常</span></div>
+                                          <div class="yve_loss"><a>挂失</a></div>
+                                      </div>
+                                  </div>
+							</li>
+							<li>
+								 <div class="shimin_kayue_02">
+                                      <div class="yve_tybox">
+                                          <div class="yve_tybiaoti">交通卡</div>
+                                          <div class="kahao_tyfwkahao">卡号：3312345*****</div>
+                                      </div>
+                                     
+                                      <div class="yve_dabox">
+                                          <div class="big_yve"> 大钱包余额：<span class="yve_text_red">999￥</span> </div>
+                                          <div class="small_yve">小钱余额：<span class="yve_text_red">77￥</span></div>
+                                      </div>
+                                      <div class="kayve_foot">
+                                          <div class="yve_state">卡状态：<span class="yve_text_red">正常</span></div>
+                                          <div class="yve_loss"><a>挂失</a></div>
+                                      </div>
+                                  </div>
+							</li>
+						</ul>
+						<a class="sNext" href="javascript:void(0)"></a>
+					</div><!-- slideBox End -->
+
+				
+
+
+			</div><!-- parBd End -->
+		</div>
+
+		<script type="text/javascript">
+			/*
+			SuperSlide组合注意：
+			1、内外层mainCell、targetCell、prevCell、nextCell等对象不能相同，除非特殊应用；
+			2、注意书写顺序，通常先写内层js调用，再写外层js调用
+			*/
+
+			/* 内层图片滚动切换 */
+			jQuery(".slideGroup .slideBox").slide({ mainCell:"ul",vis:2,prevCell:".sPrev",nextCell:".sNext",effect:"leftLoop"});
+
+			/* 外层tab切换 */
+			/*jQuery(".slideGroup").slide({titCell:".parHd li",mainCell:".parBd"}); ,delayTime:1000,autoPlay:true */
+
+		</script>
+
+
+
+
+
+</body>
+</html>
+<script type="text/javascript">
+//百度统计代码
+var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3Fa630f96b6a9dd549675d26373853f7f1' type='text/javascript'%3E%3C/script%3E"));
+</script>
+

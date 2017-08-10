@@ -1,0 +1,114 @@
+@charset "utf-8";
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: "黑体";
+}
+.ywtopboss {
+	height: 148px;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.ywlogobos {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
+.ywlogo {
+	background-repeat: no-repeat;
+	float: left;
+	width: 80%;
+}
+.ywhuanpifu {
+	float: right;
+	background-image: url(../images/ywtop02.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 85px;
+	margin-right: 10px;
+	width: 18%;
+}
+
+.shangyi{
+	margin-top:-10px;}
+
+
+
+
+.navsss {
+	background-image: url(../images/ywtop032.jpg);
+	height: 57px;
+	background-repeat: repeat-x;
+	width: 100%;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	
+	
+}
+.navsss UL {
+	color: #FFF;
+	float: left;
+	list-style-image: none;
+	list-style-type: none;
+	height: 57px;
+	margin-left: 30px;
+}
+.menuullino1{
+	padding-left: 30px;
+}
+.navsss LI {
+	color: #FFF;
+	font-size: 16px;
+	float: left;
+	height: 57px;
+	font-family: "黑体";
+}
+.navsss LI A {
+	color: #FFF;
+	font-size: 16px;
+	float: left;
+	height: 57px;
+	font-family: "黑体";
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 20px;
+	TEXT-DECORATION: none;
+}
+.navsss LI A:hover {
+	 background-image: url(../images/ywtop042.jpg);
+	background-repeat: repeat-x;
+}
+.current{
+   background-image: url(../images/ywtop042.jpg);
+	background-repeat: repeat-x;
+}
+.navsss .nobg a:hover {
+	
+	background-image: none;
+	background-repeat: no-repeat;
+}
+.navsss .nobg {
+	color: #FFF;
+	font-size: 16px;
+	float: left;
+	height: 57px;
+	font-family: "黑体";
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-left: 50px;
+	TEXT-DECORATION: none;
+	margin-top: -5px;
+}
+.ywfoot {
+	background-image: url(../images/ywfoot012.jpg);
+	background-repeat: repeat-x;
+	height: 118px;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 30px;
+	color: #FFF;
+	line-height: 30px;
+}

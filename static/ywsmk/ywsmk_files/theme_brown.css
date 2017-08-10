@@ -1,0 +1,17 @@
+/* .nav_bar{background:#d50833;} */
+.nav div {background:#ed1543;}
+.nav div a {border-bottom:1px dotted #f66d8a;}
+
+.serve01{width:100px;height:100px;background-position:center;background-size:100px 100px;background-image:url(serve_pic_01_brown.png);background-repeat:no-repeat;margin:0 auto;}
+.serve02{width:100px;height:100px;background-position:center;background-size:100px 100px;background-image:url(serve_pic_02_brown.png);background-repeat:no-repeat;margin:0 auto;}
+.serve03{width:100px;height:100px;background-position:center;background-size:100px 100px;background-image:url(serve_pic_03_brown.png);background-repeat:no-repeat;margin:0 auto;}
+.serve04{width:100px;height:100px;background-position:center;background-size:100px 100px;background-image:url(serve_pic_04_brown.png);background-repeat:no-repeat;margin:0 auto;}
+.serve05{width:100px;height:100px;background-position:center;background-size:100px 100px;background-image:url(serve_pic_04_brown.png);background-repeat:no-repeat;margin:0 auto;}
+.serve06{width:100px;height:100px;background-position:center;background-size:100px 100px;background-image:url(serve_pic_04_brown.png);background-repeat:no-repeat;margin:0 auto;}
+.more_btn{background:url(more_btn_brown.png) no-repeat;background-size:37px 13px;}
+
+.hrtopxw {/* margin-top: 10px; */padding: 10px;font-size: 16px;font-weight: bold;
+         background-image: url(../images/zongse_01.png);background-repeat: no-repeat;color: #FFF;}
+.hrxianxw_xj{background-image: url(../images/zongse_02.png);background-repeat: no-repeat;height:15px;background-size: 155px auto;}
+/* .theme_back{background-image: url(../theme/8.png)} */
+.theme_back{background-image: url(../theme/11.png)}

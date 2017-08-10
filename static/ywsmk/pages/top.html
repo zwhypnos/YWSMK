@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+  
+<title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+    <link href="../css/ywtop2.css" rel="stylesheet" type="text/css" />
+     <!--  <link href="css/ywtop.css" rel="stylesheet" type="text/css" /> -->
+    <!-- Bootstrap -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery.js"></script>
+	<script src="../bootstrap/js/bootstrap.min.js"></script>
+	<script src="../bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.min.css">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-responsive.css">
+    
+</head>
+
+
+<!-- 
+
+<script language="javascript" type="text/javascript">
+var  $c=function(array){var nArray = [];for (var i=0;i<array.length;i++) nArray.push(array[i]);return nArray;};
+Array.prototype.each=function(func){
+for(var i=0,l=this.length;i<l;i++) {func(this[i],i);};
+};
+document .getElementsByClassName=function(cn){
+var hasClass=function(w,Name){
+var hasClass = false;
+w.className.split(' ').each(function(s){
+if (s == Name) hasClass = true;
+});
+return hasClass;
+}; 
+var elems =document.getElementsByTagName("*")||document.all;
+            var elemList = [];
+           $c(elems).each(function(e){
+if(hasClass(e,cn)){elemList.push(e);}
+		   })
+        return $c(elemList);
+};		
+function change_bg(obj){
+var a=document.getElementsByClassName("navsss")[0].getElementsByTagName("a");
+for(var i=0;i<a.length;i++){a[i].className="";}
+obj.className="current";
+}
+</script>
+-->
+
+<style type="text/css"> 
+/* www.divcss5.com CSS下拉菜单实例 */ 
+*{margin:0;padding:0;border:0} 
+body{ font-family: arial, 宋体, serif; font-size:12px} 
+ 
+ 
+#nav{line-height: 24px;  list-style-type: none; background:#666} 
+ 
+#nav a{display: block; width: 80px; text-align:center} 
+ 
+#nav a:link {color:#666; text-decoration:none} 
+#nav a:visited {color:#666;text-decoration:none} 
+#nav a:hover {color:#FFF;text-decoration:none;font-weight:bold} 
+ 
+#nav li{float: left; width: 80px; background:#CCC} 
+#nav li a:hover{ background:#999} 
+#nav li ul{line-height: 27px;  list-style-type: none;text-align:left;left: -999em; width: 180px; position: absolute} 
+#nav li ul li{float: left; width: 180px;background:#EFEFEF} 
+ 
+ 
+#nav li ul a{display: block; width: 156px;text-align:left;padding-left:24px; overflow:hidden} 
+ 
+#nav li ul a:link {color:#666; text-decoration:none} 
+#nav li ul a:visited {color:#666;text-decoration:none} 
+#nav li ul a:hover {color:#F3F3F3;text-decoration:none;font-weight:normal;background:#C00} 
+ 
+#nav li:hover ul{left: auto} 
+#nav li.sfhover ul{left: auto} 
+#content{clear: left} 
+</style> 
+ 
+<script type=text/javascript> 
+ 
+function menuFix(){ 
+    var sfEls = document.getElementById("nav").getElementsByTagName("li"); 
+    for (var i=0; i<sfEls.length; i++){
+        sfEls[i].onmouseover=function(){
+        this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+        }
+        sfEls[i].onMouseDown=function(){
+        this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+        }
+        sfEls[i].onMouseUp=function(){
+        this.className+=(this.className.length>0? " ": "") + "sfhover"; 
+        }
+        sfEls[i].onmouseout=function(){
+        thisthis.className=this.className.replace(new RegExp("( ?|^)sfhover\\b"), 
+"");
+        }
+    }
+}
+window.onload=menuFix; 
+</script> 
+
+
+
+
+<body>
+<div class="ywtopboss">
+<div class="ywlogobos">
+<div class="ywlogo">
+<img src="../images/ywtop01.png" height="85" />
+</div>
+<a href="#"><div class="ywhuanpifu"></div></a>
+</div>
+
+<!-- 
+
+<DIV class="navsss">
+  <UL>
+    <LI class="menuullino1" ><A href="#" onclick="change_bg(this)">首页</A></LI>
+    <LI><A href="#" onclick="change_bg(this)">关于市民卡</A> </LI>
+    <LI><A href="#" onclick="change_bg(this)">市民卡动态</a> </LI>
+    <LI><A href="#" onclick="change_bg(this)">市民卡应用</A> </LI> 
+    <LI><A href="#" onclick="change_bg(this)">市民卡服务</A> </LI>
+    <LI><A href="#" onclick="change_bg(this)">联盟商户</A> </LI>
+    <LI><A href="#" onclick="change_bg(this)">咨询疑问</A> </LI>
+    <LI><A href="#" onclick="change_bg(this)">网上商城</A> </LI>
+    <li class="nobg"><input name="" type="text" />
+   <button type="button" class="btn shangyi" >搜索</button></li>
+  </UL>
+</DIV>
+</div>
+
+-->
+
+
+
+
+</html>

@@ -1,0 +1,71 @@
+/* CSS Document */
+/*分页*/
+.fenye_gonggao{
+	float: left;
+	width:320px;
+}
+#pageGro_gogngao{
+	width: 320px;
+	height: 30px;
+	padding-top: 30px;
+	margin-top: 0px;
+	
+	margin-bottom: 0px;
+	float: left;
+	
+}
+#pageGro_gogngao div,#pageGro_gogngao div ul li{ font-size:16px; color:#999; line-height:23px; float:left; margin-left:5px;}
+#pageGro_gogngao div ul li{
+	width: 30px;
+	text-align: center;
+	cursor: pointer;
+	line-height: 30px;
+	background-image: url(../images/shouzi_bg.jpg);
+	background-repeat: no-repeat;
+	height: 30px;
+	background-size: 100% 100%;
+	border-radius: 2px;
+}
+#pageGro_gogngao div ul li.on{ color:#fff; background:#3c90d9; }
+#pageGro_gogngao .pageUp_gonggao,#pageGro_gogngao .pageDown_gonggao{ width:63px;  cursor:pointer;}
+#pageGro_gogngao .pageUp_gonggao{
+	background-image: url(../images/list_notop.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 30px;
+	width: 30px;
+}
+#pageGro_gogngao .pageDown_gonggao{
+	background-image: url(../images/list_next.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 30px;
+	width: 30px;
+}
+.gong_left{
+	height: 30px;
+	padding-top: 10px;
+	float: left;
+	font-size: 16px;
+	color: #CCC;
+	}
+.lanzi_text{
+	color: #6FB4FC;
+	font-size: 16px;
+}
+.gong_right{
+	padding-top: 25px;
+	width: 450px;
+	float: right;
+	line-height: 50px;
+	height: 50px;
+	font-size: 16px;
+	color: #CCC;
+}
+
+.fytext_left{ float:right;height:50px;line-height: 50px;}
+.fyinputbox{ float:right; width:95px;height:50px;line-height: 50px;}
+.dijiye {width: 50px;height: 20px;line-height: 20px;border-radius: 5px;padding: 5px;border:solid 1px #a3a4a6;  font-size:16px;}
+input:focus{outline:none;}
+.dijiye:focus {border-radius: 5px;padding: 5px;border:solid 1px #00CCFF;}
+.buttoncxfy {background-image: none;background-repeat: no-repeat;font-family: "微软雅黑";color: #FFF;height: 40px;width: 100px;font-size: 16px;    		border-radius: 5px;text-decoration: none;padding: 0px;background-color: #167ece; text-align:center; margin-top:5px;float:right;}

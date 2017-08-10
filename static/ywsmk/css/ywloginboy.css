@@ -1,0 +1,280 @@
+@charset "utf-8";
+body{
+	margin: 0px;
+	padding: 0px;
+	font-weight: normal;
+	font-family: "黑体";
+	font-size: 14px;
+}
+a{
+	color: #000;
+	text-decoration: none;
+	}
+.huise {
+	color: #666;
+	text-decoration: none;
+}
+
+
+.ywloginbg {
+	background-image: url(../images/ywlog01.jpg);
+	background-size: 100%100%;
+	width: 100%;
+	height: 650px;
+	background-repeat: no-repeat;
+}
+
+.ywloginboy {
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+	clear: none;
+}
+.ywloginbg .ywloginboy .ywloginbox {
+	background-image: url(../images/ywlognbox.png);
+	background-size: 100%100%;
+	width: 396px;
+	height: 515px;
+	background-repeat: no-repeat;
+	float: right;
+	margin-top: 70px;
+}
+.ywloginbg .ywloginboy .ywloginbox .ywlogintable {
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	width: 90%;
+}
+.ywloginbg .ywloginboy .ywloginbox .ywlogintable tr td {
+	height: 30px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+
+.daxiao {
+	width: 270px;
+	border-right-width: 1px;
+	border-right-style: none;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 10px 0px 0px 10px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #a3a4a6;
+	border-right-color: #a3a4a6;
+	border-bottom-color: #a3a4a6;
+	border-left-color: #a3a4a6;
+	float: left;
+}
+input:focus{
+	outline:none;
+	}
+.daxiao:focus {
+	border-radius: 10px 0px 0px 10px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #00CCFF;
+	border-right-color: #00CCFF;
+	border-bottom-color: #00CCFF;
+	border-left-color: #00CCFF	 
+}
+.dxhoumian {
+	background-color: #FFF;
+	
+	width: 30px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0px 10px 10px 0px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #a3a4a6;
+	border-right-color: #a3a4a6;
+	border-bottom-color: #a3a4a6;
+	border-left-color: #a3a4a6;
+	float: left;
+}
+.yzmtext {
+	background-color: #FFF;
+	width: 50px;
+	border-right-width: 1px;
+	border-right-style: none;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 10px 0px 0px 10px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #a3a4a6;
+	border-right-color: #a3a4a6;
+	border-bottom-color: #a3a4a6;
+	border-left-color: #a3a4a6;
+	float: left;
+	color: #999;
+	font-size: 14px;
+}
+
+.yzminput {
+	width: 120px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	height: 30px;
+	line-height: 30px;
+	border-radius: 0px 10px 10px 0px;
+	padding: 5px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-left-style: none;
+	border-top-color: #a3a4a6;
+	border-right-color: #a3a4a6;
+	border-bottom-color: #a3a4a6;
+	border-left-color: #a3a4a6;
+	float: left;
+}
+.nopain {
+	margin: 0px;
+	padding: 0px;
+}
+.ywdenglubut {
+	background-image: url(../images/ywdenlu.png);
+	background-repeat: no-repeat;
+	font-family: "黑体";
+	color: #FFF;
+	height: 38px;
+	width: 154px;
+	font-size: 14px;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 0px;
+}
+
+.ywsydenglubut {
+	background-image: url(../images/ywswdl.jpg);
+	background-repeat: no-repeat;
+	font-family: "黑体";
+	color: #FFF;
+	height: 38px;
+	width: 154px;
+	font-size: 14px;
+	border-radius: 5px;
+	text-decoration: none;
+	padding: 0px;
+}
+.ywloginbg .ywloginboy .ywloginbox .ywlogintable .nopain td .nopainss tr td {
+	padding: 0px;
+}
+.ywkayingyong {
+	background-image: url(../images/ywyinyong01.jpg);
+	background-size: 100%100%;
+	width: 100%;
+	height: 88px;
+	background-repeat: no-repeat;
+}
+.yiwuzhong {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.ywxwka{}.ywxwkaHR {
+	background-color: #787878;
+	height: 10px;
+	width: 100%;
+}
+.ywxwka {
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+}
+
+.hrborderxw {
+	border: 3px solid #efefef;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+}
+.hrtopxw {
+	padding: 10px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.hrxianxw {
+	background-color: #efefef;
+	height: 3px;
+	width: 100%;
+
+}
+.ywloginboy .ywxwka table tr td .hrborderxw .hrbodyxw ul {
+	margin-left: -15px;
+}
+.ywloginboy .ywxwka table tr td .hrborderxw .hrbodyxw ul li {
+	list-style-position: outside;
+	list-style-image: url(../images/ywxwli.png);
+	list-style-type: none;
+	margin-right: 10px;
+	padding-bottom: 15px;
+}
+.xwxiaobiaoti {
+	font-size: 18px;
+	font-weight: bolder;
+	margin-bottom: 15px;
+}
+
+.ywloginboy .ywxwka table tr td .hrborderxw .hrbodyxw ul li a:visited  {
+	color: #F00;
+}
+
+
+
+.ywxwshijian {
+	font-weight: bold;
+	float: right;
+	font-size: 16px;
+	color: #000;
+}
+
+
+.ywloginboy .ywxwka table tr td .hrborderxw .hrbodyxw ul li .xwerjixiaobiaoti {
+	font-size: 16px;
+	font-weight: bold;
+}
+.ywfoot {
+	background-image: url(../images/ywfoot01.jpg);
+	background-repeat: repeat-x;
+	height: 118px;
+	width: 100%;
+	margin-top: 20px;
+	text-align: center;
+	padding-top: 30px;
+	color: #FFF;
+	line-height: 30px;
+}
